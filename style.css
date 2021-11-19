@@ -3,23 +3,36 @@
   font-style:  normal;
   font-weight: 400;
   font-display: swap;
-  src: url("Inter-3.19/Inter\ Web/Inter-Regular.woff2?v=3.19") format("woff2"),
-  url("Inter-3.19/Inter\ Web/Inter-Regular.woff?v=3.19")format("woff");
+  src: url("/vendor/fonts/Inter-Regular.woff2") format("woff2"),
+  url("/vendor/fonts/Inter-Regular.woff")format("woff");
 }
 
 @font-face {
-  font-family: 'Inter-Black';
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/vendor/fonts/Inter-Bold.woff2") format("woff2"),
+       url("/vendor/fonts/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style:  normal;
   font-weight: 900;
   font-display: swap;
-  src: url("Inter-3.19/Inter\ Web/Inter-Black.woff2?v=3.19") format("woff2"),
-  url("Inter-3.19/Inter\ Web/Inter-Black.woff?v=3.19")format("woff");
+  src: url("/vendor/fonts/Inter-Black.woff2") format("woff2"),
+  url("/vendor/fonts/Inter-Black.woff")format("woff");
+}
+
+.body {
+  margin: 0;
 }
 
 .page {
   max-width: 1280px;
-  height: 6875px;
-  margin: auto;
+  min-height: 6875px;
+  margin: 0 auto;
   background-color: #2A2C2F;
   color: white;
   font-family: Inter, sans-serif;
@@ -93,10 +106,17 @@
   text-align: center;
 }
 
+.lead__image-subtitle{
+  margin: 0;
+}
+
 .lead__image {
-  width: 984px;
-  height: 615px;
+  /* max-width: 984px;*/
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
   padding-top: 64px;
+  display: block;
 }
 
 .lead__caption {
