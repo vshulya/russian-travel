@@ -111,7 +111,6 @@
 }
 
 .lead__image {
-  /* max-width: 984px;*/
   max-width: 100%;
   width: 100%;
   object-fit: cover;
@@ -188,14 +187,18 @@
   padding-top: 92px;
   margin: auto;
   max-width: 984px;
+  display: grid;
+  gap: 80px;
 }
 
 .place {
   width: 100%;
-  margin-bottom: 60px;
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 40px;
+  grid-template-areas:
+    "place__title place__website"
+    "place__image place__paragraphs";
 }
 
 .place__title {
@@ -205,16 +208,22 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
+  grid-area: place__title;
 }
 
 .place__image {
-  width: 460px;
-  height: 460px;
-  padding-top: 48px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: place__image;
+
 }
 
 .place__website {
-  padding-top: 102px;
+  grid-area: place__website;
+  align-self: end;
 }
 
 .place__url-heading {
@@ -233,17 +242,80 @@
   line-height: 22px;
   text-decoration-line: underline;
   color: white;
+  transition: .3s;
+}
+
+.place__link:hover {
+  opacity: .8;
+  transition: .3s;
 }
 
 .place__paragraphs {
   max-width: 484px;
-  padding: 48px 0 0 0;
   font-size: 18px;
   line-height: 163%;
+  grid-area: place__paragraphs;
 }
 
 .place__paragraph {
   margin: 0;
   padding-bottom: 26px;
-
 }
+
+.cover {
+  margin: 0 auto;
+  padding-top: 92px;
+  max-width: 1184px;
+}
+
+.cover__link {
+  min-height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-image: url(/images/cover-trains.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.cover__title {
+  margin: 0;
+  padding: 0;
+  max-width: 560px;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  z-index: 2;
+}
+
+.cover__subtitle {
+  margin: 0;
+  padding: 32px 0 0 0;
+  max-width: 360px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  z-index: 2;
+}
+
+.cover__link:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #2A2C2F;
+  opacity: .3;
+  position: absolute;
+  transition: .3s;
+}
+
+.cover__link:hover:before {
+  opacity: .8;
+  transition: .3s;
+}
+
+
