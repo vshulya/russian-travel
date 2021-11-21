@@ -1,0 +1,22 @@
+.place {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  gap: 48px 40px;
+  grid-template-areas:
+    "place__title place__website"
+    "place__image place__paragraphs";
+}
+
+@media screen and (max-width: 540px){
+  .place {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    grid-template-areas:
+      "place__title"
+      "place__website"
+      "place__image"
+      "place__paragraphs";
+  }
+}
