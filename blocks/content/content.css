@@ -3,13 +3,21 @@
   gap: 92px;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
   .content {
     gap: 88px;
   }
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 670px) {
+  .content {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
   .content {
     gap: 64px;
     margin: 0 auto;
