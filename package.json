@@ -1,9 +1,0 @@
-{
-  "devDependencies": {
-    "css-to-bem-file-structure": "^0.0.1"
-  },
-  "dependencies": {
-    "bem-tools-core": "^0.0.3",
-    "serve": "^13.0.2"
-  }
-}
