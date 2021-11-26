@@ -2,12 +2,17 @@
   margin: auto;
   width: 100%;
   max-width: 984px;
-  min-height: 429px;
 }
 
 @media screen and (max-width: 960px){
   .intro {
     max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .intro {
+    max-width: 600px;
   }
 }
 

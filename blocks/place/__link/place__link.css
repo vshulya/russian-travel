@@ -5,10 +5,10 @@
   line-height: 22px;
   text-decoration-line: underline;
   color: white;
-  transition: .3s;
+  /*  transition: .3s; */
 }
 
-.place__link:hover {
+/*.place__link:hover {
   opacity: .8;
   transition: .3s;
-}
+}*/
