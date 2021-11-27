@@ -9,6 +9,7 @@
 
 @media screen and (max-width: 1120px) {
   .lead__image {
+    max-width: 928px;
     min-height: 580px;
     padding-top: 56px;
   }
@@ -29,5 +30,3 @@
     padding-top: 40px;
   }
 }
-
-

@@ -3,6 +3,7 @@
   font-size: 18px;
   line-height: 163%;
   grid-area: place__paragraphs;
+  align-self: start;
   display: grid;
   gap: 27px;
 }
