@@ -1,16 +1,12 @@
-# Проект: Путешествие по России
+# Russian Travel 
 
-## О проекте
-Посадочная страница про путешествия по России, созданная в рамках обучения на курсе Веб-разработчик от Яндекс Практикум. Это мои первые шаги в HTML и CSS.
+## About
+Single page website with adaptive design. Layout was made according to the brief provided by the course Yandex.Practicum.
 
-## Что использовано на странице
+## I used
 1. flex и grid-layout
 2. iframes
-3. псевдоклассы
+3. BEM
 
-
-## Особенности проекта
-Файловая структура CSS создана по методолгии БЭМ, что позволяет легко переиспользовать блоки для разных секций страницы.
-
-## Ссылка на страницу 
+## Link
 https://vshulya.github.io/russian-travel/
