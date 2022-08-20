@@ -1,7 +1,7 @@
 # Russian Travel 
 
 ## About
-Single page website with adaptive design. Layout was made according to the brief provided by the course Yandex.Practicum.
+A single-page application with adaptive design. Layout was made according to the brief provided by the course Yandex.Practicum.
 
 ## I used
 1. flex и grid-layout
